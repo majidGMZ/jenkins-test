@@ -1,4 +1,4 @@
-pipeline {
+node {
   stage('SCM Checkout'){
     git 'https://github.com/majidGMZ/jenkins-test'
   }
