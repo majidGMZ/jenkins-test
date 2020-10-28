@@ -1,7 +1,8 @@
 pipeline {
   agent {
-    dockerfile {
-      filename 'Dockerfile'
+    docker {
+      image 'openjdk:8'
+      args '-v /home/majid/.m2:/root/.m2'
     }
 
   }
