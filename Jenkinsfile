@@ -19,7 +19,9 @@ pipeline {
     stage('deploy') {
       steps {
         echo 'deplying'
-        sh 'java -jar jenkinscd-0.0.1-SNAPSHOT.war'
+        sh 'ls'
+        sh 'pwd'
+        sh 'java -jar target/jenkinscd-0.0.1-SNAPSHOT.war'
       }
     }
 
