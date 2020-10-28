@@ -2,6 +2,7 @@ pipeline {
   agent any
   stages {
     stage('build') {
+      agent any
       steps {
         echo 'building'
         tool(name: 'jenkins-test', type: 'maven')
