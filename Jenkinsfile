@@ -4,7 +4,7 @@ pipeline {
     stage('build') {
       steps {
         echo 'building'
-        sh 'jenkins/build.sh'
+        sh 'mvn clean install -Dlicense.skip=true'
       }
     }
 
