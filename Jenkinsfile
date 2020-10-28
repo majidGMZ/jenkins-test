@@ -4,8 +4,8 @@ pipeline {
     stage('Build') {
       steps {
         echo 'building'
-        sh 'mvn package'
         tool(name: 'jenkins-test', type: 'maven')
+        sh 'mvn package'
       }
     }
 
