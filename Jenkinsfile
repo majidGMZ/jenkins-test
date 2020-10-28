@@ -21,7 +21,7 @@ pipeline {
         echo 'deplying'
         sh 'ls'
         sh 'pwd'
-        sh 'java -jar target/jenkinscd-0.0.1-SNAPSHOT.war'
+        sh 'java -jar ../jenkins-test_master@2/target/jenkinscd-0.0.1-SNAPSHOT.war'
       }
     }
 
