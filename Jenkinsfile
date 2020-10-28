@@ -6,7 +6,7 @@ pipeline {
       steps {
         echo 'building'
         tool(name: 'jenkins-test', type: 'maven')
-        sh 'mvn install -Dmaven.test.skip=true'
+        sh 'mvn package'
       }
     }
 
